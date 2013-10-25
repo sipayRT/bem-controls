@@ -217,7 +217,7 @@ provide(DOM.decl('input', /** @lends Block.prototype */ {
 
     },
 
-/**
+    /**
      * Выставляем фокус для элемента control
      * @private
      */
