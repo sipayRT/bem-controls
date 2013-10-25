@@ -1,0 +1,17 @@
+block attach, elem control {
+
+    tag: 'input'
+
+    attrs: {
+        var a = {
+            type: 'file',
+            name: this._name
+        };
+
+        !!this._disabled && (a.disabled = 'disabled');
+        this._tabindex && (a.tabindex = this._tabindex);
+
+        return a;
+    }
+
+}

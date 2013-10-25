@@ -1,0 +1,33 @@
+.input__control
+{
+    position: relative;
+    z-index: 3;
+
+    width: 100%;
+    margin: 0;
+
+    color: #000;
+
+    font-size: 100%;
+}
+
+@media all and (min-width:0px) {
+    .i-ua_js_yes .input__control
+    {
+        height: 2em;
+
+        outline: 0;
+
+        border: 0;
+        background: none;
+
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+.input__control::-ms-clear
+{
+    /* Hide native cross in IE10 */
+    display: none;
+}
