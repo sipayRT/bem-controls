@@ -1,10 +1,10 @@
-modules.define('i-bem__dom', function(provide, DOM) {
+modules.define('i-bem__dom', function(provide, BEMDOM) {
 
 /**
  * @namespace
  * @name CheckButton
  */
-provide(DOM.decl({ block: 'check-button', baseBlock: 'checkbox' }, /** @lends CheckButton.prototype */ {
+BEMDOM.decl({ block: 'check-button', baseBlock: 'checkbox' }, /** @lends CheckButton.prototype */ {
 
     onSetMod : {
 
@@ -63,6 +63,8 @@ provide(DOM.decl({ block: 'check-button', baseBlock: 'checkbox' }, /** @lends Ch
 
     }
 
-}));
+});
+
+provide(BEMDOM);
 
 });

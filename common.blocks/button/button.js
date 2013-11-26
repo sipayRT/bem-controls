@@ -1,10 +1,10 @@
-modules.define('i-bem__dom', ['next-tick', 'jquery'], function(provide, nextTick, $, DOM) {
+modules.define('i-bem__dom', ['next-tick', 'jquery'], function(provide, nextTick, $, BEMDOM) {
 
 /**
  * @namespace
  * @name Button
  */
-provide(DOM.decl('button', /** @lends Button.prototype */ {
+BEMDOM.decl('button', /** @lends Button.prototype */ {
 
     onSetMod : {
 
@@ -216,6 +216,8 @@ provide(DOM.decl('button', /** @lends Button.prototype */ {
             });
     }
 
-}));
+});
+
+provide(BEMDOM);
 
 });

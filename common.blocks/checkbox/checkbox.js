@@ -1,10 +1,10 @@
-modules.define('i-bem__dom', ['next-tick'], function(provide, nextTick, DOM) {
+modules.define('i-bem__dom', ['next-tick'], function(provide, nextTick, BEMDOM) {
 
 /**
  * @namespace i-bem.js реализация блока checkbox
  * @name Checkbox
  */
-provide(DOM.decl('checkbox', /** @lends Checkbox.prototype */ {
+BEMDOM.decl('checkbox', /** @lends Checkbox.prototype */ {
 
     onSetMod : {
 
@@ -149,6 +149,8 @@ provide(DOM.decl('checkbox', /** @lends Checkbox.prototype */ {
         return false;
     }
 
-}));
+});
+
+provide(BEMDOM);
 
 });

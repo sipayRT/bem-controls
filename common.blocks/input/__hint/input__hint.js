@@ -1,6 +1,6 @@
-modules.define('i-bem__dom', function(provide, DOM) {
+modules.define('i-bem__dom', function(provide, BEMDOM) {
 
-provide(DOM.decl('input', {
+BEMDOM.decl('input', {
 
     onSetMod : {
 
@@ -35,6 +35,8 @@ provide(DOM.decl('input', {
 
     }
 
-}));
+});
+
+provide(BEMDOM);
 
 });

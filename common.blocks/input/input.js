@@ -1,5 +1,5 @@
 modules.define('i-bem__dom', ['jquery', 'next-tick', 'tick', 'idle'],
-    function(provide, $, nextTick, tick, idle, DOM) {
+    function(provide, $, nextTick, tick, idle, BEMDOM) {
 
 var instances,
     update = function () {
@@ -15,7 +15,7 @@ var instances,
  * @namespace
  * @name Block
  */
-provide(DOM.decl('input', /** @lends Block.prototype */ {
+BEMDOM.decl('input', /** @lends Block.prototype */ {
 
     onSetMod : {
 
@@ -242,6 +242,8 @@ provide(DOM.decl('input', /** @lends Block.prototype */ {
         return false;
 
     }
-}));
+});
+
+provide(BEMDOM);
 
 });

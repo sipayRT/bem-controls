@@ -1,6 +1,6 @@
-modules.define('i-bem__dom', function(provide, DOM) {
+modules.define('i-bem__dom', function(provide, BEMDOM) {
 
-provide(DOM.decl('input', {
+BEMDOM.decl('input', {
     onSetMod : {
         'js' : {
             'inited' : function() {
@@ -27,6 +27,8 @@ provide(DOM.decl('input', {
 
         this.val('val' in sampleParams? sampleParams.val : linkDomElem.text(), { source : 'sample' });
     }
-}));
+});
+
+provide(BEMDOM);
 
 });

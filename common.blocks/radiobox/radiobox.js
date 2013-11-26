@@ -1,10 +1,10 @@
-modules.define('i-bem__dom', ['next-tick', 'jquery'], function(provide, nextTick, $, DOM) {
+modules.define('i-bem__dom', ['next-tick', 'jquery'], function(provide, nextTick, $, BEMDOM) {
 
 /**
  * @namespace JS-API блока radio
  * @name block
  */
-provide(DOM.decl('radiobox', /** @lends block.prototype */ {
+BEMDOM.decl('radiobox', /** @lends block.prototype */ {
 
     onSetMod: {
 
@@ -234,6 +234,8 @@ provide(DOM.decl('radiobox', /** @lends block.prototype */ {
 
     }
 
-}));
+});
+
+provide(BEMDOM);
 
 });

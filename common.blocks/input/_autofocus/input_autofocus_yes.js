@@ -1,4 +1,4 @@
-modules.define('i-bem__dom', function(provide, DOM) {
+modules.define('i-bem__dom', function(provide, BEMDOM) {
 
 /**
  * Хелпер для определения типа нажатой клавиши
@@ -15,7 +15,7 @@ var isTextKey = function(e) {
         return true;
 };
 
-provide(DOM.decl({name : 'input', modName : 'autofocus', modVal : 'yes'}, {
+BEMDOM.decl({name : 'input', modName : 'autofocus', modVal : 'yes'}, {
 
     onSetMod : {
 
@@ -70,6 +70,8 @@ provide(DOM.decl({name : 'input', modName : 'autofocus', modVal : 'yes'}, {
         }
     }
 
-}));
+});
+
+provide(BEMDOM);
 
 });

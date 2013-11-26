@@ -1,11 +1,11 @@
 modules.define('i-bem__dom', ['jquery'],
-    function(provide, $, DOM) {
+    function(provide, $, BEMDOM) {
 
 /**
  * @namespace
  * @name Attach
  */
-provide(DOM.decl('attach', /** @lends Attach.prototype */ {
+BEMDOM.decl('attach', /** @lends Attach.prototype */ {
 
     onSetMod : {
 
@@ -230,6 +230,8 @@ provide(DOM.decl('attach', /** @lends Attach.prototype */ {
 
     }
 
-}));
+});
+
+provide(BEMDOM);
 
 });
